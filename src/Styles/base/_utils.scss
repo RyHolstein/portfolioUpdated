@@ -1,0 +1,32 @@
+
+
+
+
+
+
+@import '../package';
+
+
+
+
+.header__title {
+    position: absolute;
+    left: 10px;
+    top: 0;
+    transform-origin: top left;
+    // border: 1px solid red;
+    color: #222;
+    font-size: 9em;
+    font-weight: bold;
+    // transform: rotate(-90deg);
+    animation: fadeIn 1s ease-in;
+    @include textOutline(#fff);
+}
+
+
+@keyframes fadeIn {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+

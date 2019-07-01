@@ -1,0 +1,69 @@
+
+
+// for media queries 
+@mixin breakpoint($class) {
+    @if $class == mobile {
+        @media (max-width: 500px) { @content; }
+    } 
+    @else if $class == sm {
+        @media (max-width: 768px) { @content; }
+    }
+    @else if $class == ipad {
+        @media (max-width: 992px) { @content; }
+    }
+    @else if $class == smallerDesktop {
+        @media (max-width: 1200px) { @content; }
+    }
+    @else if $class == desktop {
+         @media (min-width: 1200px) { @content; }
+    }
+    @else if $class == xxl {
+        @media (min-width: 1300px) { @content; }
+   }
+    @else {
+      @warn "Breakpoint mixin supports: xs, sm, md, lg";
+    }
+}
+
+
+
+//for creating a circle
+@mixin createCircle($size) {
+    height: $size;
+    width: $size;
+    border-radius: $size;
+    overflow: hidden;
+}
+
+
+   
+
+       
+@mixin createLine($color) {
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        // transform: scaleX(0);
+        background: $color;
+        height:3px;
+        bottom: 0;
+        left: 0;
+        transform-origin: bottom left;
+        transition: transform 0.25s ease-out;
+        z-index: -1;
+        border-radius: 10px;
+       
+    }
+
+}
+
+
+
+@mixin textOutline($color) {
+    text-shadow:
+                -1px -1px 0 $color,
+                1px -1px 0 $color,
+                -1px 1px 0 $color,
+                1px 1px 0 $color;
+}

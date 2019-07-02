@@ -2,8 +2,7 @@ import React, { Component } from 'react'
 import Header from '../Sides/Header/Header';
 import Body from '../Sides/Body/Body';
 import ProjectList from '../../Components/ProjectList/ProjectList';
-
-
+import './Projects.scss';
 
 
 class Projects extends Component {
@@ -20,13 +19,20 @@ class Projects extends Component {
         return (
             <React.Fragment>
                 <Header> 
-                    <p className='header__title'>Projects</p>
+                    <div className='projects__header'>
+                        
+                        <div className='projects__title'>
+                            <div className='bar'></div>
+                            Projects
+                            
+                        </div>
+                        {/* <div className='bar'></div> */}
+                      
+                    </div>
 
                 </Header>
                 <Body>
                     <ProjectList goTo={this.goTo}/>
-
-
                 </Body>
 
 

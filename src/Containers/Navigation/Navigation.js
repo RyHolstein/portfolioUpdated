@@ -10,9 +10,13 @@ class Navigation extends Component {
     render () {
         return (
             <nav className='navigation'>
-                <p className='navigation__link underline--gradient' onClick={()=> this.goTo('/about')}>About Me</p>
-                <p className='navigation__link underline--gradient' onClick={()=> this.goTo('/projects')} >Projects</p>
-                <p className='navigation__link underline--gradient' onClick={()=> this.goTo('/contact')} >Contact</p>
+                <div className='navigation__links'>
+                    <div className='corner corner--left'></div>
+                    <div className='corner corner--right'></div>
+                    <p className='navigation__link underline--gradient' onClick={()=> this.goTo('/about')}>About Me</p>
+                    <p className='navigation__link underline--gradient' onClick={()=> this.goTo('/projects')} >Projects</p>
+                    {/* <p className='navigation__link underline--gradient' onClick={()=> this.goTo('/contact')} >Contact</p> */}
+                </div>
             </nav>
         )
     }

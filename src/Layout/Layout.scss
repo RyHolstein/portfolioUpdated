@@ -18,6 +18,8 @@
     .page__layout--header {
         flex: 0 0 40%;
         background-color: #222;
+        // border-bottom-left-radius: 50px;
+        // border-bottom-right-radius: 50px;
         @include breakpoint(desktop) {
             flex: 0 0 50%;
         }

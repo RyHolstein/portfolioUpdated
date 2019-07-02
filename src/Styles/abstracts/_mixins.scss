@@ -28,7 +28,7 @@
 
 
 //for creating a circle
-@mixin createCircle($size) {
+@mixin circle($size) {
     height: $size;
     width: $size;
     border-radius: $size;

@@ -17,11 +17,20 @@
 
 
     &--list {
-        height: 2000px;
+        
+        height: auto;
         width: 80%;
         // border: 1px solid red;
         border-radius: 10px;
         background-color: #eee;
         box-shadow: $card-shadow;
+        overflow: hidden;
+        overflow: scroll;
+        display: flex;
+        flex-direction: column;
+        img {
+            width: 100%;
+
+        }
     }
 }

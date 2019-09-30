@@ -8,9 +8,9 @@ import noiseFilter from '../../../Assets/Effects/noise.png';
 
 const Header = props => {
 
-    const style = {backgroundImage: `url(${noiseFilter})`}
+ 
 
-    return ( <div className='page__layout--header' style={style}> {props.children}</div>)
+    // return ( <div className='page__layout--header' style={style}> {props.children}</div>)
 
     
 }

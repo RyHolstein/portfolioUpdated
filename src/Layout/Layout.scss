@@ -7,30 +7,7 @@
 .page__layout {
     height: 100vh;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    @include breakpoint(desktop) {
-        flex-direction: row;
-    }
+    background-color: #222;
 
-
-
-    .page__layout--header {
-        flex: 0 0 40%;
-        background-color: #222;
-        // border-bottom-left-radius: 50px;
-        // border-bottom-right-radius: 50px;
-        @include breakpoint(desktop) {
-            flex: 0 0 50%;
-        }
-    }
-
-    .page__layout--body {
-        flex: 0 0 60%;
-        // border: 1px solid blue;
-        background-color: #fff;
-        @include breakpoint(desktop) {
-            flex: 0 0 50%;
-        }
-    }
+ 
 }

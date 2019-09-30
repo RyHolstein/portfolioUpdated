@@ -7,13 +7,13 @@ import AboutMe from '../Containers/AboutMe/AboutMe';
 import Contact from '../Containers/Contact/Contact';
 import Project from '../Containers/Projects/Project/Project';
 
-
+import noiseFilter from '../Assets/Effects/noise.png';
 
 const Layout = props => {
 
-
+    const style = {backgroundImage: `url(${noiseFilter})`}
     return (
-        <div className='page__layout'>
+        <div className='page__layout' style={style}>
             <Route path='/' exact component={Home} />
             <Route path='/projects' exact component={Projects} />
             <Route path='/projects/:id' exact component={Project} />

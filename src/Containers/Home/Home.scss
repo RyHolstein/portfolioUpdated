@@ -1,6 +1,16 @@
-@import '../../../Styles/package';
+@import '../../Styles/package';
 
-
+@keyframes iconPopUp {
+    0%{
+        transform: translateY(150%);
+        opacity: 0;;
+    
+    }
+    100%{ 
+        transform: translateY(0);
+        opacity: 1;
+    }   
+}
 
 .home-header {
     height: 100%;
@@ -8,6 +18,29 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    .links {    
+        padding: 20px 0;
+        // height: 20px;
+        // border: 1px solid red;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+
+
+        &__link {
+            cursor: pointer;
+            color: #fff;
+            font-size: 3em;
+            animation: iconPopUp .5s ease-in;
+            animation-delay: 1s;
+            animation-fill-mode: both;
+        }
+
+
+    }
 
 
     .logo {

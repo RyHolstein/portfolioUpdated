@@ -14,6 +14,7 @@ const Layout = props => {
     const style = {backgroundImage: `url(${noiseFilter})`}
     return (
         <div className='page__layout' style={style}>
+            <div className='backdrop'></div>
             <Route path='/' exact component={Home} />
             <Route path='/projects' exact component={Projects} />
             <Route path='/projects/:id' exact component={Project} />

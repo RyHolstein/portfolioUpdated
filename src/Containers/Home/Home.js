@@ -30,6 +30,8 @@ const Home = props => {
                 <p className='logo__name'>Ryan Holstein</p>
                 <p className='logo__subtitle'>Web Developer</p>
             </div>
+
+           
         </div>
 
         

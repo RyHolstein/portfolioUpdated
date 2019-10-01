@@ -36,7 +36,20 @@
             font-size: 3em;
             animation: iconPopUp .5s ease-in;
             animation-delay: 1s;
-            animation-fill-mode: both;
+            animation-fill-mode: backwards;
+            transition: .1s ease-in-out;
+            &:hover {
+
+
+                transform: translateY(-5px);
+                
+                
+                &.first { color:$yellow}
+                &.second { color: $green }
+                &.third { color: $blue }
+                &.fourth { color: $red}
+                
+            }
         }
 
 
@@ -110,6 +123,36 @@
 
     }
 
+
+
+
+    .caution-sign {
+        background-color: $yellow;
+        height: 200px; width: 400px;
+        margin-top: 50px;
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 0px 7px 10px rgba(black, 0.5);
+        cursor: not-allowed;
+        .top-row {
+                color: $yellow;
+                text-align: center;
+                font-size: 2em;
+                font-weight: bold;
+                text-transform: uppercase;
+                background-color: #222;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+        }
+        .bottom-row {
+            font-size: 2em;
+            text-align: center;
+            font-weight: bold;
+            margin-top: 20px;
+            text-transform: capitalize;
+        }
+
+    }
 
 
 }

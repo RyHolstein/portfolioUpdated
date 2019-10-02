@@ -1,23 +1,13 @@
 
 
-@import '../../Styles/package';
+@import '../../../Styles/package';
 
 
 
 .project-list {
     // border: 1px solid red;
     width: 500px;
-    display: flex;
-    justify-content: center;
-    // align-items: center;
-    flex-direction: column;
-
-    border-radius: 10px;
-
-    background-color: #fff;
-    box-shadow: $card-shadow;
-    padding: 20px 0 ;
-
+  
     &__project {
         position: relative;
         cursor: pointer;
@@ -57,4 +47,10 @@
 
 }
 
+
+.icon-list {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid red;
+}
 

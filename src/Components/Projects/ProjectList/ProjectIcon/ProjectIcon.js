@@ -1,13 +1,13 @@
 import React from 'react'
 
-
+import './ProjectIcon'
 
 const ProjectIcon = props => {
 
 
     return (
-        <div>
-
+        <div className='project-icon'>
+            
         </div>
     )
 }

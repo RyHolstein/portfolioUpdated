@@ -1,0 +1,55 @@
+@import '../../../Styles/package';
+
+
+
+.finder-window {
+
+    background-color: #fff;
+    width: 100%;
+    min-height: 300px;
+    border-radius: 6px;
+    overflow: hidden;
+    .finder {
+        &__title {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            font-size: .8em;
+            font-weight: 600;
+            color: darken(#ccc, 50%)
+        }
+        &__topbar {
+            position: relative;
+            //top-color: #E6E5E6
+            //bottom-color: #D1D0D1
+            background-color: #e6e5e6;
+            background-image: linear-gradient(180deg, #e6e5e6 59%, #d1d0d1 100%);
+            height: 30px;
+            border-bottom: 1px solid #ccc;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+
+
+
+
+            .button-row {
+                display: flex;
+                align-items: center;
+
+                .finder-button {
+                    @include circle(12px);
+                    // border: 1px solid #222;
+                    margin-right: 5px;
+
+                    &.red {background-color: #F74E48}
+                    &.yellow {background-color: #FFC12F}
+                    &.green {background-color: #2BD143}
+                }
+            }
+        }
+    }
+
+}
+

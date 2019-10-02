@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 
-import ProjectList from '../../Components/ProjectList/ProjectList';
+import ProjectList from './ProjectList/ProjectList';
 import './Projects.scss';
 
 

@@ -1,0 +1,37 @@
+@import '../../../Styles/package';
+
+
+
+.links {    
+    padding: 20px 0;
+    // height: 20px;
+    // border: 1px solid red;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+
+
+    &__link {
+        cursor: pointer;
+        color: #fff;
+        font-size: 3em;
+        animation: iconPopUp .5s ease-in;
+        animation-delay: 1s;
+        animation-fill-mode: backwards;
+        transition: .1s ease-in-out;
+        &:hover {
+
+
+            transform: translateY(-5px);
+            
+            
+            &.first { color:$yellow}
+            &.second { color: $green }
+            &.third { color: $blue }
+            &.fourth { color: $red}
+            
+        }
+    }
+}

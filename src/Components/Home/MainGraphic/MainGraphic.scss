@@ -1,0 +1,54 @@
+@import '../../../Styles/package';
+
+.home-graphic {
+
+    width: 500px;
+    @include breakpoint(mobile) {width: 300px;}
+
+
+    .logo {
+        &__name {
+            color: #fff; 
+            font-size: 5em;
+            font-weight: bold;
+            line-height: 1em;
+            @include breakpoint(mobile) {font-size: 3em;}
+            
+        }
+    
+        &__subtitle {
+            color: #222; 
+            font-size: 3em;
+            font-weight: bold;
+            text-align: right;
+            line-height: 1em;
+            @include breakpoint(mobile) {font-size: 1.5em;}
+            @include textOutline(#fff);
+        }
+    
+        &__grad-bar {
+            // border: 1px solid red;
+            height: 20px;
+            width: 100%;
+            position: relative;
+            // background: $gradient;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+    
+    
+            &:before {
+                content: '';
+                position: relative;
+                height: 5px;
+                width: 100%;
+                background: $gradient;
+                // border-radius: 10px;s
+                // border: 1px solid red;
+            }
+            
+        }
+    
+    }
+
+}

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import Header from '../Sides/Header/Header';
-import Body from '../Sides/Body/Body';
+
+
 import ProjectList from '../../Components/ProjectList/ProjectList';
 import './Projects.scss';
 
@@ -18,7 +18,7 @@ class Projects extends Component {
 
         return (
             <React.Fragment>
-                <Header> 
+                
                     <div className='projects__header'>
                         
                         <div className='projects__title'>
@@ -29,11 +29,11 @@ class Projects extends Component {
                         {/* <div className='bar'></div> */}
                       
                     </div>
-
-                </Header>
-                <Body>
-                    <ProjectList goTo={this.goTo}/>
-                </Body>
+                    <div className='projects__list'>
+                        <ProjectList goTo={this.goTo}/>
+                    </div>
+               
+              
 
 
             </React.Fragment>

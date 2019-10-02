@@ -7,7 +7,7 @@
 .page__layout {
     height: 100vh;
     width: 100%;
-    
+    position: relative;
 }
 
 .backdrop {
@@ -16,5 +16,6 @@
     position: fixed;
     top: 0; left: 0;
     height: 100vh; width: 100vw;
+    // border: 1px solid red;
 
 }

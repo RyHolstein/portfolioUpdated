@@ -1,18 +1,30 @@
 import React from 'react'
 
 import './ProjectList.scss';
-import Finder from '../../UI/Finder/Finder';
 
+
+import Finder from '../../UI/Finder/Finder';
+import ProjectIcon from './ProjectIcon/ProjectIcon';
+
+
+import projects from '../../Project/ProjectInfo';
 
 const ProjectList = props => {
 
     
-
     return (
         <div className='project-list'>
             <Finder title={'📂 Recent Projects'}>
                 <div className='icon-list'>
-
+                    {
+                        Object.keys(projects).map((key, index) => {
+                            return <ProjectIcon 
+                            click={() => props.goTo(`/projects/${key}`)}
+                            key={index} 
+                            name={projects[key].folderInfo.name} 
+                            icon={projects[key].folderInfo.icon}/>
+                        })
+                    }
                 </div>
             </Finder>
         </div>

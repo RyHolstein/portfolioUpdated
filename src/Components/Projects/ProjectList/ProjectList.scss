@@ -49,8 +49,14 @@
 
 
 .icon-list {
+    // border-top: 1px solid #eee;
     width: 100%;
     padding: 10px;
-    border: 1px solid red;
+    // border: 1px solid red;
+    
+    // grid-template-columns: repeat(auto-fill, minmax(25%,1fr));
+    // grid-gap: 1rem;
+    
+
 }
 

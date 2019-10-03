@@ -1,0 +1,32 @@
+@import '../../Styles/package';
+
+
+
+.project {
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+
+    &__header {
+        // border: 1px solid red;
+
+
+        .header-title {
+            font-size: 8vw;
+            color: #222;
+            font-weight: 900;
+            @include textOutline(#fff)
+        }
+    }
+    
+
+
+    &__info {
+    
+        font-size: 1.2em;
+        width: 400px;
+        text-align: justify;
+        display: inline-block;
+    }
+}
+

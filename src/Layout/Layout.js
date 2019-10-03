@@ -5,7 +5,7 @@ import Home from '../Components/Home/Home';
 import Projects from '../Components/Projects/Projects';
 // import AboutMe from '../Containers/AboutMe/AboutMe';
 // import Contact from '../Containers/Contact/Contact';
-// import Project from '../Containers/Projects/Project/Project';
+import Project from '../Components/Project/Project';
 
 import noiseFilter from '../Assets/Effects/noise.png';
 
@@ -17,11 +17,14 @@ const Layout = props => {
             <div className='backdrop' style={style}></div>
             <Route path='/' exact component={Home} />
             <Route path='/projects' exact component={Projects} />
-            {/* <Route path='/projects/:id' exact component={Project} />
-            <Route path='/about' component={AboutMe} />
-            <Route path='/contact' component={Contact} /> */}
+            <Route path='/projects/:id' exact component={Project} />
+         
         </div>
     )
 }
 
 export default withRouter(Layout);
+
+
+//<Route path='/about' component={AboutMe} />
+//<Route path='/contact' component={Contact} /> 

@@ -4,7 +4,7 @@
 
 .finder-window {
 
-    background-color: #fff;
+    // background-color: #fff;
     width: 100%;
     min-height: 300px;
     border-radius: 6px;
@@ -20,6 +20,7 @@
             color: darken(#ccc, 50%)
         }
         &__topbar {
+            opacity: 0;
             position: relative;
             //top-color: #E6E5E6
             //bottom-color: #D1D0D1

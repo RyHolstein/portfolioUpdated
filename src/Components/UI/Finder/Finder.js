@@ -16,6 +16,7 @@ const Finder = (props) => {
 
                  <div className='finder__title'>
                         <p>{props.title}</p>
+                        
                  </div>
             </div>
             <div className='finder__content'>

@@ -22,7 +22,8 @@ const ProjectList = props => {
                             click={() => props.goTo(`/projects/${key}`)}
                             key={index} 
                             name={projects[key].folderInfo.name} 
-                            icon={projects[key].folderInfo.icon}/>
+                            icon={projects[key].folderInfo.icon}
+                            subtext={projects[key].folderInfo.subtext}/>
                         })
                     }
                 </div>

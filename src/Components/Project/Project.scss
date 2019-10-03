@@ -1,22 +1,47 @@
 @import '../../Styles/package';
 
 
+.center-project {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 
 .project {
     color: #fff;
     text-align: center;
     padding: 20px 0;
+    position: relative;
+    // border: 1px solid red;
+    width: 500px;
+    @include breakpoint(mobile) {
+        width: 100%;
+        padding: 20px 10px;
+    }
 
     &__header {
         // border: 1px solid red;
-
-
+        padding-top: 30px;
+        position: relative;
         .header-title {
-            font-size: 8vw;
+           
+            font-size: 4em;
             color: #222;
             font-weight: 900;
-            @include textOutline(#fff)
+            line-height: .8em;
+            text-align: left;
+            
+            @include textOutline(#fff);
+
+            // transform: rotate(-90deg);
+            // transform-origin: left center;
+
+
+            // border: 1px solid red;
+            // white-space: nowrap
+            
         }
+       
     }
     
 
@@ -24,9 +49,23 @@
     &__info {
     
         font-size: 1.2em;
-        width: 400px;
+        width: 100%;
         text-align: justify;
         display: inline-block;
+    }
+
+    &__footer {
+        margin: 0 0 50px 0;
+        // border: 1px solid red;
+        display: inline-block;
+        padding: 10px;
+        p{
+            display: inline-block;
+            font-size: 2em;
+            // border: 1px solid red;
+            line-height: 1.5em;
+            // padding: 40px;
+        }
     }
 }
 

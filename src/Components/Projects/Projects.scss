@@ -2,16 +2,26 @@
 
 
 .projects {
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    
     &__header {
         // border: 1px solid red;
+        // border: 1px solid red;
         // height: 100%;
-        padding: 50px;
+        padding: 50px 0;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        
+        width: 500px;
+        @include breakpoint(mobile) {
+            width: 100%; 
+            padding: 50px 10px 0 10px;
+        }
+
     }
 
 
@@ -32,7 +42,7 @@
             animation: titlePopDown 1s ease-in-out;
             @include textOutline(#fff);
             @include breakpoint(mobile) {
-                font-size: 5em;
+                font-size: .8em;
                 // border: 1px solid red;
             }
 
@@ -47,11 +57,17 @@
     &__list {
         display: flex; 
         justify-content: center;
-
-
+        // border: 1px solid red;
+        width: 500px;
         animation: projectListStart 1s ease-in-out;
         animation-delay: 1s;
         animation-fill-mode: both;
+
+
+        @include breakpoint(mobile) {
+            width: 100%; 
+            padding: 0 10px;
+        }
 
         &.away {
             animation: projectListFinish .8s ease-in-out;

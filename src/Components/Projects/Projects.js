@@ -29,12 +29,12 @@ class Projects extends Component {
 
 
         return (
-            <React.Fragment>
+            <div className='projects'>
                 
                     <div className='projects__header'>
                         
+                        <div className='bar'></div>
                         <div className='projects__title'>
-                            <div className='bar'></div>
                             <p className={`title-text ${this.state.leaving ? 'away': ''}`}>Projects</p>
                         </div>
                         {/* <div className='bar'></div> */}
@@ -47,7 +47,7 @@ class Projects extends Component {
               
 
 
-            </React.Fragment>
+            </div>
         )
     }
 }

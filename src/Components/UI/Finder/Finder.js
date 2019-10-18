@@ -11,12 +11,22 @@ class Finder extends Component {
 
     state = {
         windowHistory: ['home'],
-        show: true,
+        show: this.props.tabs.includes('home'),
+    }
+
+
+    componentDidUpdate(prevProps) {
+        if (prevProps.tabs !== this.props.tabs ) {
+            let updatedShow = this.props.tabs.includes('home')
+            this.setState({show: updatedShow})
+        }
     }
 
 
 
-    closeWindowHandler = () => this.setState({show: false})
+   
+
+    closeWindowHandler = () => this.props.closeTab('home')
     
 
     render () {

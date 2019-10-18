@@ -1,0 +1,21 @@
+@import '../../Styles/package';
+
+.project-store {
+    &.hide {display: none;}
+    
+    @include createWindow(400px, 700px);
+    
+    display: flex;
+
+    &__sidebar {
+        width: 30%;
+        // border: 1px solid red;
+    }
+    &__main {
+        width: 70%;
+        // border: 1px solid blue;
+    }
+    
+
+    
+}

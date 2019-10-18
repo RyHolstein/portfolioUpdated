@@ -1,0 +1,18 @@
+
+@import '../../../../../Styles/package';
+
+
+.window-buttons {
+    display: flex;
+    align-items: center;
+    z-index: 15;
+    .finder-button {
+        @include circle(12px);
+        // border: 1px solid #222;
+        pointer-events: all;
+        margin-right: 5px;
+        &.red {background-color: #F74E48}
+        &.yellow {background-color: #FFC12F}
+        &.green {background-color: #2BD143}
+    }
+}

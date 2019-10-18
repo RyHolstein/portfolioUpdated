@@ -1,0 +1,35 @@
+@import '../../Styles/package';
+
+
+.app-bar {
+    border: 1px solid #222;
+    min-width: 400px;
+    min-height: 75px;
+    display: inline-block;
+    border-bottom: none;
+    position: relative;
+    color: #fff;
+    padding: 10px;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+
+
+    .glass-blur  {
+        height: 110%;
+        width: 110%;
+        background-color: lighten(#222, 10%);
+        position: absolute;
+        left: -5%; top: -5%;
+        z-index: -1;
+        filter: blur(10px);
+
+        -webkit-filter: blur(10px);
+        opacity: .8;
+        
+    
+    }
+
+}
+

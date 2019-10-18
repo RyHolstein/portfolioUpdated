@@ -4,10 +4,12 @@ import React from 'react'
 import memoji from '../../../../Assets/Memojis/memoji-1.png';
 
 
-import './HomeSidebar.scss';
-const HomeSidebar = props => {
+import './HomeTopbar.scss';
+
+//THE  SIDEBAR HAS BECOME A TOPBAR 
 
 
+const HomeTopbar = props => {
 
     return (
         <div className='home__sidebar'>
@@ -15,12 +17,14 @@ const HomeSidebar = props => {
                 <div className='memoji__icon'>
                     <img src={memoji} alt='' />
                 </div>
-                <p className='user__name'>Ryan Holstein</p>
-                <p className='user__email'>me@ryanholste.in</p>
+                <div className='user__info'>
+                    <p className='user__name'>Ryan Holstein</p>
+                    <p className='user__email'>me@ryanholste.in</p>
+                </div>
             </div>
         </div>
     )
 }
 
 
-export default HomeSidebar;
+export default HomeTopbar;

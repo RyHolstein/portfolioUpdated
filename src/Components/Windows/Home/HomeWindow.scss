@@ -3,17 +3,43 @@
 
 .home {
     display: flex;
+    flex-direction: column;
     height: 100%;
     // border: 1px solid purple;
 
     &__sidebar {
-        width: 175px; 
-        height: 100%;
+        width: 100%; 
+        height: 125px;
         
     }
 
     &__content {
         flex: 1 1 auto;
         // bordeR: 1px solid blue;
+    }
+
+    &__section {
+        
+        min-height: 100px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 20px;
+        align-content: center;
+        justify-items: center;
+        // border: 1px solid blue;
+        padding: 20px 0;
+        
+
+
+        &--me {
+            height: 110px;
+            background-color: $menu-gray-light;
+            border-top: $border-light;
+            border-bottom: $border-light;
+        }
+        &--projects {
+            min-height: 200px;
+            background-color: $menu-gray-dark;
+        }
     }
 }

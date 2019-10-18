@@ -3,22 +3,23 @@
 
 .home__sidebar {
 
-    background-color: #303335;
-    border-right: 1px solid rgba(#eee, .2);
+    background-color: $menu-gray-dark;
+ 
 
     color: #fff;
 
     .user {
         // border: 1px solid red;
-        height: 200px;
+        height: 100%;
         display: flex;
-        justify-content: center;
+        padding: 0 20px;
+        // justify-content: center;
         align-items: center;
-        flex-direction: column;
+        // flex-direction: column;
 
         &__name {
             font-weight: 700;
-            margin-top: 10px;
+            
         }
         &__email {
             font-size: .8em;
@@ -28,15 +29,16 @@
     }
 
     .memoji__icon {
-        @include circle (100px);
+        @include circle (60px);
         // border :1px solid red;
         background-color: lightblue;
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-right: 10px;
 
         img {
-        height: 100px;
+            height:110%;
 
         }
     }

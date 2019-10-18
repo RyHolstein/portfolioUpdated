@@ -1,29 +1,59 @@
-import React from 'react'
+import React, { Component } from 'react'
+import Draggable from 'react-draggable'
 
 import './Finder.scss';
+import FinderTopBar from './FinderTopBar/FinderTopBar';
+import HomeWindow from '../../Windows/Home/HomeWindow';
 
-const Finder = (props) => {
+class Finder extends Component {
 
 
-    return (
-        <div className='finder-window finder'>
-            <div className='finder__topbar'>
-                 <div className='button-row'>
-                    <div className='finder-button red btn'></div>
-                    <div className='finder-button yellow btn'></div>
-                    <div className='finder-button green btn'></div>
-                 </div>
 
-                 <div className='finder__title'>
-                        <p>{props.title}</p>
-                        
-                 </div>
-            </div>
-            <div className='finder__content'>
-                {props.children}
-            </div>
-        </div>
-    )
+    state = {
+        windowHistory: ['home'],
+        show: true,
+    }
+
+
+
+    closeWindowHandler = () => this.setState({show: false})
+    
+
+    render () {
+
+        const getFinderTitle = () => {
+            switch (this.state.windowHistory[0]) {
+                case('home'): return 'Welcome';
+                default : return 'Ryan Holstein';
+            } 
+        }
+
+
+        const getFinderContent = () => {
+            switch (this.state.windowHistory[0]) {
+                case('home'): return <HomeWindow />;
+                default : return null;
+            } 
+        }
+
+        return (
+            <Draggable >
+                <div className={`finder-window finder ${this.state.show ? '' : 'hide'}` } >
+                    <FinderTopBar 
+                    close={ () => this.closeWindowHandler() } 
+                    title={getFinderTitle()}/>
+                    <div className='finder__content'>
+                        {getFinderContent()}
+                    </div>
+                </div>
+            </Draggable>
+        
+        )
+    }
+
+
+
+
 }
 
 

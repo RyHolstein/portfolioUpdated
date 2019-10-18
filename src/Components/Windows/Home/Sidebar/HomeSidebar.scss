@@ -1,0 +1,46 @@
+@import '../../../../Styles/package';
+
+
+.home__sidebar {
+
+    background-color: #303335;
+    border-right: 1px solid rgba(#eee, .2);
+
+    color: #fff;
+
+    .user {
+        // border: 1px solid red;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        &__name {
+            font-weight: 700;
+            margin-top: 10px;
+        }
+        &__email {
+            font-size: .8em;
+            font-weight: 600;
+            opacity: .6;
+        }
+    }
+
+    .memoji__icon {
+        @include circle (100px);
+        // border :1px solid red;
+        background-color: lightblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+        height: 100px;
+
+        }
+    }
+
+
+
+}

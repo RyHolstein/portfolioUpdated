@@ -8,7 +8,7 @@ import Projects from '../Components/Projects/Projects';
 import Project from '../Components/Project/Project';
 
 import noiseFilter from '../Assets/Effects/noise.png';
-import Template from '../Components/Template/Template';
+import Screen from '../Components/Screen/Screen';
 
 const Layout = props => {
 
@@ -17,7 +17,7 @@ const Layout = props => {
         <div className='page__layout'>
             <div className='backdrop' style={style}></div>
             <Route path='/' exact component={Home} />
-            <Route path='/temp' exact component={Template} />
+            <Route path='/template' exact component={Screen} />
             <Route path='/projects' exact component={Projects} />
             <Route path='/projects/:id' exact component={Project} />
          

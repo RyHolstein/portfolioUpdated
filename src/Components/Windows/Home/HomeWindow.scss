@@ -1,0 +1,19 @@
+@import '../../../Styles/package';
+
+
+.home {
+    display: flex;
+    height: 100%;
+    // border: 1px solid purple;
+
+    &__sidebar {
+        width: 175px; 
+        height: 100%;
+        
+    }
+
+    &__content {
+        flex: 1 1 auto;
+        // bordeR: 1px solid blue;
+    }
+}

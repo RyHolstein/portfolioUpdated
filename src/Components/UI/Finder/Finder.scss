@@ -3,12 +3,36 @@
 
 
 .finder-window {
+    &.hide {display: none;}
+    
+    width: 650px;
+    min-height: 200px;
 
-    // background-color: #fff;
-    width: 100%;
-    min-height: 300px;
     border-radius: 6px;
     overflow: hidden;
+
+    position: absolute;
+    top: 20%; left: 20%;
+   
+    border : 1px solid #222;
+    background-color: #1F2021;
+
+
+
+    &:before {
+        content: '';
+        position: absolute;
+        height: 100%; width: 100%;
+        top: 0; left: 0;
+        // background-color: red;
+        border-radius: 6px;
+        box-shadow: inset 0 0 2px rgba(#fff, .5);
+        z-index: 11;
+        pointer-events: none;
+        
+    }
+    
+
     .finder {
         &__title {
             position: absolute;
@@ -17,38 +41,49 @@
             transform: translate(-50%, -50%);
             font-size: .8em;
             font-weight: 600;
-            color: darken(#ccc, 50%)
+            color: #fff
         }
         &__topbar {
-            opacity: 0;
+            cursor: grab;
+            z-index: 10;
             position: relative;
-            //top-color: #E6E5E6
-            //bottom-color: #D1D0D1
-            background-color: #e6e5e6;
-            background-image: linear-gradient(180deg, #e6e5e6 59%, #d1d0d1 100%);
-            height: 30px;
-            border-bottom: 1px solid #ccc;
+        
+            
+            background-image: linear-gradient(180deg, #3E3F40 59%, #343536 100%);
+            height: 40px;
+            box-shadow: 0 1px 2px #000;
             padding: 10px;
-            display: flex;
+            display: flex;  
             align-items: center;
+        
+            border-top-right-radius: 6px;
+            border-top-left-radius: 6px;
 
 
-
-
+        
             .button-row {
                 display: flex;
                 align-items: center;
-
+                z-index: 15;
                 .finder-button {
                     @include circle(12px);
                     // border: 1px solid #222;
+                    pointer-events: all;
                     margin-right: 5px;
-
                     &.red {background-color: #F74E48}
                     &.yellow {background-color: #FFC12F}
                     &.green {background-color: #2BD143}
                 }
             }
+        }
+
+        &__content {
+            z-index: 10;
+            // border: 1px solid red;
+            
+            // border: 1px solid red;
+            height: 400px;
+            
         }
     }
 

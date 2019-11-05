@@ -88,7 +88,7 @@ const info = {
         description: 'This site is a movie review site that allows you to review movies and see what your friend saying about movies.  I am primarily the frontend on the projects as working with other dev.  The site was created using React as well as Scss for the stylings.  TMDB api was used for the movie info, and amazons services such as Cognito, S3 Buckets, and Lamada were used for used for User authentication, storage, and the Kritiq api. This site is still very much a work in progress.',
         imgs: [kImage1, kImage2,kImage3,kImage4],
         role: 'Frontend',
-        site: 'https://kritiqme.com/',
+        site: 'https://kritiqme.com/movies',
         folderInfo : {
             name: 'kritiq',
             subtext: 'a social movie review experience'

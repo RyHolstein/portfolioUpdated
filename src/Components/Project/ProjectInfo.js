@@ -65,7 +65,7 @@ const info = {
         description: 'This project was created in react with the api a REST Django application.  This project was created to be a survey that collects and stores information from certain customers.  An app was also in development that would allow users to create a specialized meal plan and have the meals delivered to the location of their choice. Both projects were created in React with the use of Scss and mobile first design as well as our Django REST api.',
         imgs: [cvImage1,cvImage2,cvImage3,cvImage4],
         role: 'Frontend',
-        site: 'https://caravive.com/',
+        // site: 'https://caravive.com/',
         folderInfo : {
             name: 'carvive',
             icon: caraviveIcon,
@@ -77,7 +77,7 @@ const info = {
         description: 'Worked on the Iris Digital Community platform software to promote healthy living. Building out Angular, and React apps for displaying community information such as local events, services, and articles, as well as a variety of apps for various functions. Also has  a complete admin site with full CRUD so content team can edit add or delete information for the site.  Design were brought in from out of house Team and we created the site with their designs.',
         imgs: [irisImage1, irisImage2,irisImage3,irisImage5],
         role: 'Frontend',
-        site: 'https://iris-oc.com/dashboard/',
+        site: 'https://sandbox.iris-oc.com/dashboard/',
         folderInfo : {
             name: 'iris',
             icon: irisIcon,

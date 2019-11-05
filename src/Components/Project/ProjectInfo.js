@@ -65,7 +65,6 @@ const info = {
         description: 'This project was created in react with the api a REST Django application.  This project was created to be a survey that collects and stores information from certain customers.  An app was also in development that would allow users to create a specialized meal plan and have the meals delivered to the location of their choice. Both projects were created in React with the use of Scss and mobile first design as well as our Django REST api.',
         imgs: [cvImage1,cvImage2,cvImage3,cvImage4],
         role: 'Frontend',
-        // site: 'https://caravive.com/',
         folderInfo : {
             name: 'carvive',
             icon: caraviveIcon,
@@ -136,7 +135,6 @@ const info = {
         description: 'This site was created as an application site that allows users to apply for the Riddle Family Foundation Scholarship.  The Frontend was created with vanilla Javascript with the backend being created in node.js with express and MongoDb for the database.  The site also features admin panel that gives the admin full CRUD control over the applications that have been submitted.  The site also has email notification that emails the admin when an application has been submitted.',
         imgs: [riddle1, riddle2],
         role: 'Fullstack',
-        site: 'http://riddlefamily.foundation/apply',
         folderInfo : {
             name: 'riddle_foundation',
             subtext: 'a scholarship application site'
